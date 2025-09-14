@@ -1,3 +1,13 @@
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-family: 'figtree', sans-serif;
+}
+.container {
+    max-width: 370px;
+    margin: 0 auto;
+    padding: 20px; 
+    background-color: white;  
+}
 
 .attribution {
     font-size: 11px;
