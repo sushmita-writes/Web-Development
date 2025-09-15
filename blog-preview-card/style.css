@@ -39,12 +39,17 @@ main {
     color: hsl(47, 88%, 63%);
 }
 
-.container .field {
+.container .field span {
     background-color: hsl(47, 88%, 63%);
     border-radius: 10px;
     padding: 8px;
     font-size: medium;
     font-weight: 800;
+}
+
+.container .field:hover {
+    cursor: pointer;
+    scale: 1.01;
 }
 
 .container .profile {
@@ -58,6 +63,11 @@ main {
 .container .profile img {
     width: 30px;
     height: 30px;
+}
+
+.container .profile img:hover, .container .profile h5:hover {
+    cursor: pointer;
+    scale: 1.1;
 }
 
 .attribution {
