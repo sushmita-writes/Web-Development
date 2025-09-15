@@ -51,6 +51,16 @@ main {
     cursor: pointer;
     scale: 1.01;
 }
+.container .publish-date {
+    font-size: smaller;
+    font-weight: 500;
+}
+
+.container .description {
+    font-size: small;
+    font-weight: 500;
+    color: hsl(0, 0%, 42%);
+}
 
 .container .profile {
     display: flex;
@@ -58,6 +68,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
+    font-weight: 800;
 }
 
 .container .profile img {
@@ -65,7 +76,7 @@ main {
     height: 30px;
 }
 
-.container .profile img:hover, .container .profile h5:hover {
+.container .profile img:hover, .container .profile p:hover {
     cursor: pointer;
     scale: 1.1;
 }
