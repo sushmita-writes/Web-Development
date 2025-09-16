@@ -6,6 +6,6 @@
 .DS_Store
 .prettierignore
 
-style-guide.md
+**/style-guide.md
 
 **/assets/fonts/
