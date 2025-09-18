@@ -6,6 +6,75 @@ body {
     color: hsl(0, 0%, 100%);
 }
 
-.attribution { font-size: 1.5rem; text-align: center; }
+main {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.attribution a { color: hsl(229, 60%, 81%); }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 12%);
+    margin: 0 auto;
+    max-width: max-content;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.container img {
+    width: 6.5vw;
+    height: auto;
+    border-radius: 50%;
+}
+
+.container .profile-header {
+    text-align: center;
+}
+
+.container .profile-header h1 {
+    font-size: 1.4rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+}
+
+.container .profile-header p {
+    font-size: 1.2rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0rem;
+    color: hsl(75, 94%, 57%);
+}
+
+.container .description {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+}
+
+.container .links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    width: 100%;
+
+}
+.container .links button {
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    width: 100%;
+    padding: 1rem 0;
+    font-weight: 600;
+}
+
+.attribution { font-size: 1.2rem; text-align: center; }
+
+.attribution a { color: hsl(228, 78%, 86%); }
