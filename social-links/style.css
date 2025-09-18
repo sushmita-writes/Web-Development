@@ -75,6 +75,12 @@ main {
     font-weight: 600;
 }
 
+.container .links button:hover {
+    cursor: pointer;
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+}
+
 .attribution { font-size: 1.2rem; text-align: center; }
 
 .attribution a { color: hsl(228, 78%, 86%); }
