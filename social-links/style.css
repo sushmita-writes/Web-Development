@@ -1,0 +1,11 @@
+html { font-size: 62.5%; } /* 1rem = 10px */
+
+body {
+    font-family: Inter;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution { font-size: 1.5rem; text-align: center; }
+
+.attribution a { color: hsl(229, 60%, 81%); }
