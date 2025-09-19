@@ -249,6 +249,10 @@
     list-style-position: inside;
     list-style-type: disc;
   }
+  ol {
+    list-style-position: inside;
+    list-style-type: decimal;
+  }
 }
 @property --tw-font-weight {
   syntax: "*";
