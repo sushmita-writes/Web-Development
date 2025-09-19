@@ -214,6 +214,9 @@
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
+  .pl-8 {
+    padding-left: calc(var(--spacing) * 8);
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -221,6 +224,9 @@
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
+  }
+  .text-amber-800 {
+    color: var(--color-amber-800);
   }
   .text-rose-800 {
     color: var(--color-rose-800);
@@ -231,6 +237,7 @@
     background-color: var(--color-white);
   }
   .attribution {
+    padding-block: calc(var(--spacing) * 4);
     text-align: center;
     font-size: 0.8rem;
   }
@@ -248,7 +255,7 @@
     color: var(--color-stone-600);
   }
   article {
-    padding: 2rem;
+    padding: 3rem;
     font-size: 1.2rem;
   }
   h1, h2 {
@@ -273,10 +280,20 @@
   ul {
     list-style-position: inside;
     list-style-type: disc;
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+    }
   }
   ol {
     list-style-position: outside;
     list-style-type: decimal;
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+    }
     padding-left: calc(var(--spacing) * 6);
   }
   tr {
@@ -299,6 +316,11 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -308,6 +330,7 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-font-weight: initial;
+      --tw-space-y-reverse: 0;
       --tw-border-style: solid;
     }
   }

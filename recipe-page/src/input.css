@@ -6,7 +6,7 @@
     }
 
     .attribution {
-        @apply text-center text-[0.8rem]; 
+        @apply text-center text-[0.8rem] py-4; 
     }
     .attribution a {
         @apply text-blue-500 underline;
@@ -23,7 +23,7 @@
     }
 
     article {
-        @apply p-[2rem] text-[1.2rem];
+        @apply p-[3rem] text-[1.2rem];
     }
 
     h1, h2 {
@@ -43,11 +43,11 @@
     }
 
     ul {
-        @apply list-disc list-inside;
+        @apply list-disc list-inside space-y-2;
     }
 
     ol {
-        @apply list-decimal list-outside pl-6;
+        @apply list-decimal list-outside pl-6 space-y-2;
     }
 
     tr {
