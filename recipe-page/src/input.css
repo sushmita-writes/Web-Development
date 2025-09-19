@@ -16,6 +16,7 @@
 @layer base {
     body {
         font-family: 'Outfit', sans-serif;
+        @apply text-stone-600
     }
 
     article {
