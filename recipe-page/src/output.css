@@ -10,6 +10,7 @@
     --color-amber-800: oklch(47.3% 0.137 46.201);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-rose-800: oklch(45.5% 0.188 13.697);
+    --color-stone-400: oklch(70.9% 0.01 56.259);
     --color-stone-900: oklch(21.6% 0.006 56.043);
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -197,6 +198,18 @@
   .table {
     display: table;
   }
+  .w-full {
+    width: 100%;
+  }
+  .table-auto {
+    table-layout: auto;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -255,15 +268,30 @@
     list-style-type: decimal;
     padding-left: calc(var(--spacing) * 6);
   }
+  tr {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+    border-color: var(--color-stone-400);
+  }
+  td {
+    padding: calc(var(--spacing) * 4);
+    text-align: center;
+  }
 }
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-font-weight: initial;
+      --tw-border-style: solid;
     }
   }
 }

@@ -45,4 +45,12 @@
     ol {
         @apply list-decimal list-outside pl-6;
     }
+
+    tr {
+        @apply border-b border-stone-400;
+    }
+    td {
+        @apply p-4 text-center;
+    }
+
 }
