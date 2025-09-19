@@ -5,6 +5,7 @@ A simple recipe page using semantic HTML and TailwindCSS
 ## Table of contents
 
 - [Overview](#overview)
+  - [Installation](#installation)
   - [Screenshot](#screenshot)
   - [Link](#link)
   - [Built with](#built-with)
@@ -14,7 +15,12 @@ A simple recipe page using semantic HTML and TailwindCSS
 ## Overview
 This is a beginner-level project to practise HTML and TailwindCSS.
 
+### Installation
 Installing Tailwind CLI: ![Installation](https://tailwindcss.com/docs/installation/tailwind-cli)
+
+--> Note: 
+  npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+  (Compiles Tailwind CSS and auto-rebuilds on changes.)
 
 ### Screenshot
 **Desktop**
