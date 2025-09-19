@@ -12,6 +12,7 @@
     --color-rose-800: oklch(45.5% 0.188 13.697);
     --color-stone-900: oklch(21.6% 0.006 56.043);
     --color-white: #fff;
+    --spacing: 0.25rem;
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
@@ -250,8 +251,9 @@
     list-style-type: disc;
   }
   ol {
-    list-style-position: inside;
+    list-style-position: outside;
     list-style-type: decimal;
+    padding-left: calc(var(--spacing) * 6);
   }
 }
 @property --tw-font-weight {
