@@ -7,6 +7,11 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-blue-500: oklch(62.3% 0.214 259.815);
+    --color-white: #fff;
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -160,6 +165,24 @@
   }
 }
 @layer utilities {
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
   .contents {
     display: contents;
   }
@@ -168,6 +191,9 @@
   }
 }
 @layer components {
+  .container {
+    background-color: var(--color-white);
+  }
   .attribution {
     text-align: center;
     font-size: 0.8rem;
@@ -175,5 +201,24 @@
   .attribution a {
     color: var(--color-blue-500);
     text-decoration-line: underline;
+  }
+}
+@layer base {
+  article {
+    padding: 2rem;
+  }
+  h1, h2 {
+    font-family: 'Young Serif', serif;
+  }
+  body {
+    font-family: 'Outfit', sans-serif;
+  }
+  h1 {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  h2 {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
 }
