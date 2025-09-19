@@ -238,6 +238,9 @@
     color: var(--color-blue-500);
     text-decoration-line: underline;
   }
+  .prep-time li::marker {
+    color: var(--color-rose-800);
+  }
 }
 @layer base {
   body {
@@ -287,6 +290,9 @@
   }
   hr {
     border-color: var(--color-stone-400);
+  }
+  li::marker {
+    color: var(--color-amber-800);
   }
 }
 @property --tw-font-weight {

@@ -11,6 +11,9 @@
     .attribution a {
         @apply text-blue-500 underline;
     }
+    .prep-time li::marker {
+        @apply text-rose-800;
+    }
 }
 
 @layer base {
@@ -56,6 +59,10 @@
 
     hr {
         @apply border-stone-400;
+    }
+
+    li::marker {
+        @apply text-amber-800;
     }
 
 }
