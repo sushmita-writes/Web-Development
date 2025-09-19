@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@layer components {
+    .attribution {
+        @apply text-center text-[0.8rem]; 
+    }
+    .attribution a {
+        @apply text-blue-500 underline;
+    }
+}

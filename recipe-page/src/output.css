@@ -6,6 +6,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-blue-500: oklch(62.3% 0.214 259.815);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -164,5 +165,15 @@
   }
   .table {
     display: table;
+  }
+}
+@layer components {
+  .attribution {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .attribution a {
+    color: var(--color-blue-500);
+    text-decoration-line: underline;
   }
 }
