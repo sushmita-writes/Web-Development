@@ -19,7 +19,7 @@
     }
 
     article {
-        @apply p-[2rem];
+        @apply p-[2rem] text-[1.2rem];
     }
 
     h1, h2 {
@@ -31,6 +31,14 @@
     }
 
     h2 {
-        @apply text-3xl text-brown-800;
+        @apply text-3xl text-amber-800;
+    }
+
+    section {
+        @apply my-[2rem];
+    }
+
+    ul {
+        @apply list-disc list-inside;
     }
 }
