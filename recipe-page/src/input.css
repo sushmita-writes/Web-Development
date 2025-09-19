@@ -36,7 +36,7 @@
     }
 
     section {
-        @apply my-8 flex flex-col gap-4;
+        @apply my-10 flex flex-col gap-4;
     }
 
     ul {
@@ -52,6 +52,10 @@
     }
     td {
         @apply p-4 text-center;
+    }
+
+    hr {
+        @apply border-stone-400;
     }
 
 }
