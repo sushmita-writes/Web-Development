@@ -1,6 +1,6 @@
 # Recipe page
 
-A simple recipe page using semantic HTML and TailwindCSS 
+A simple recipe page using semantic HTML and TailwindCSS. 
 
 ## Table of contents
 
@@ -25,10 +25,10 @@ Installing Tailwind CLI: ![Installation](https://tailwindcss.com/docs/installati
 ### Screenshot
 **Desktop**
 
-![Desktop Screenshot](./assets/desktop.png)
+![Desktop Screenshot](./src/assets/mobile.jpg)
 
 **Mobile**
-![Mobile Screenshot](./assets/mobile.jpg)
+![Mobile Screenshot](./src/assets/desktop.jpg)
 
 ### Link
 
@@ -37,15 +37,15 @@ Installing Tailwind CLI: ![Installation](https://tailwindcss.com/docs/installati
 ### Built with
 
 - Semantic HTML5
-- CSS
-- Flexbox
-- Hover effects
+- TailwindCSS
+- Media Queries
 
 ### What I learned
 
+- How to use utility class in TailwindCSS
+- How to use TailwindCSS's @layer directive (base and componenet layers)
 - Why to use Semantic HTML tags 
-- How to use Hover effects
-- Working with flexbox
+- How to make a responsive layout using media queries in TailwindCSS
 
 ## Author
 
