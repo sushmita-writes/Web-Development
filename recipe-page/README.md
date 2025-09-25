@@ -16,7 +16,7 @@ A simple recipe page using semantic HTML and TailwindCSS.
 This is a beginner-level project to practise HTML and TailwindCSS.
 
 ### Installation
-Installing Tailwind CLI: ![Installation](https://tailwindcss.com/docs/installation/tailwind-cli)
+Installing Tailwind CLI: [Installation](https://tailwindcss.com/docs/installation/tailwind-cli)
 
 --> Note: 
   npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
@@ -25,10 +25,10 @@ Installing Tailwind CLI: ![Installation](https://tailwindcss.com/docs/installati
 ### Screenshot
 **Desktop**
 
-![Desktop Screenshot](./src/assets/mobile.jpg)
+![Desktop Screenshot](./src/assets/desktop.jpg)
 
 **Mobile**
-![Mobile Screenshot](./src/assets/desktop.jpg)
+![Mobile Screenshot](./src/assets/mobile.jpg)
 
 ### Link
 
