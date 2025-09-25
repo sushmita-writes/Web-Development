@@ -1,29 +1,14 @@
 @import "tailwindcss";
 
-@layer components {
-    .container {
-        @apply bg-white;
-    }
-
-    .attribution {
-        @apply text-center text-[0.8rem] py-4; 
-    }
-    .attribution a {
-        @apply text-blue-500 underline;
-    }
-    .prep-time li::marker {
-        @apply text-rose-800;
-    }
-}
 
 @layer base {
     body {
         font-family: 'Outfit', sans-serif;
-        @apply text-stone-600
+        @apply text-stone-600 sm:bg-rose-100 sm:flex sm:flex-col sm:justify-center sm:items-center sm:min-h-screen;
     }
 
     article {
-        @apply p-[3rem] text-[1.2rem];
+        @apply p-[2rem] text-[1.2rem] sm:w-[45rem];
     }
 
     h1, h2 {
@@ -65,4 +50,24 @@
         @apply text-amber-800;
     }
 
+}
+
+@layer components {
+    .container {
+        @apply bg-white sm:w-[45rem] sm:my-15 sm:rounded-2xl;
+    }
+    
+    .container img {
+        @apply sm:rounded-2xl;
+    }
+    
+    .attribution {
+        @apply text-center text-[0.8rem] py-4; 
+    }
+    .attribution a {
+        @apply text-blue-500 underline;
+    }
+    .prep-time li::marker {
+        @apply text-rose-800;
+    }
 }
